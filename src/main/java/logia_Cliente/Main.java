@@ -64,7 +64,7 @@ public class Main {
         System.out.print("Ingrese el nombre del contacto que va a registrar"+":");
         String Nombre = scan.nextLine();
         System.out.print("Ingrese el número de teléfono del contacto que desea registrar: ");
-        double Num_Cel = scan.nextDouble();
+        int Num_Cel = scan.nextInt();
         scan.nextLine();
         Contacto contacto = new Contacto(Nombre, Num_Cel);
         listaContactos.add(contacto);
