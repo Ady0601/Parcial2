@@ -64,7 +64,7 @@ public class Main {
         System.out.print("Ingrese el nombre del contacto que va a registrar"+":");
         String Nombre = scan.nextLine();
         System.out.print("Ingrese el número de teléfono del contacto que desea registrar: ");
-        int Num_Cel = scan.nextInt();
+        double Num_Cel = scan.nextDouble();
         scan.nextLine();
         Contacto contacto = new Contacto(Nombre, Num_Cel);
         listaContactos.add(contacto);
@@ -123,7 +123,7 @@ public class Main {
         int n = listaContactos.size();
         for (int i = 1; i < n; ++i) {
             Contacto cel= listaContactos.get(i);
-            int j = i - 1;
+            int j = i - 1; 
             while (j >= 0 && listaContactos.get(j).getNum_Cel() > cel.getNum_Cel()) {
                 listaContactos.set(j + 1, listaContactos.get(j));
                 j = j - 1;

@@ -10,12 +10,12 @@ package logica_Negocio;
  */
 public class Contacto {
     private String Nombre;
-    private int Num_Cel;
+    private double Num_Cel;
 
     public Contacto() {
     }
 
-    public Contacto(String Nombre, int Num_Cel) {
+    public Contacto(String Nombre, double Num_Cel) {
         this.Nombre = Nombre;
         this.Num_Cel = Num_Cel;
     }
@@ -28,14 +28,12 @@ public class Contacto {
         this.Nombre = Nombre;
     }
 
-    public int getNum_Cel() {
+    public double getNum_Cel() {
         return Num_Cel;
     }
 
-    public void setNum_Cel(int Num_Cel) {
+    public void setNum_Cel(double Num_Cel) {
         this.Num_Cel = Num_Cel;
     }
-    
-    
     
 }
