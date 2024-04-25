@@ -90,7 +90,7 @@ public class Main {
         boolean encontrado = false;
         for (int i = 0; i < listaContactos.size(); i++) {
             Contacto contacto = listaContactos.get(i);
-            if (contacto.getNombre().equalsIgnoreCase(nombreBuscado)) {
+            if (contacto.getNombre().equals(nombreBuscado)) {
                 System.out.println("El contacto se encuentra en la posicion " + (i + 1) + ":");
                 System.out.println("Nombre: " + contacto.getNombre() + ", Teléfono: " + contacto.getNum_Cel());
                 encontrado = true;
@@ -108,7 +108,7 @@ public class Main {
             for (int j = 0; j < n - i - 1; j++) {
                 String nombre1 = listaContactos.get(j).getNombre();
                 String nombre2 = listaContactos.get(j + 1).getNombre();
-                if (nombre1.compareToIgnoreCase(nombre2) > 0) {
+                if (nombre1.compareTo(nombre2) > 0) {
                     Contacto temp = listaContactos.get(j);
                     listaContactos.set(j, listaContactos.get(j + 1));
                     listaContactos.set(j + 1, temp);
